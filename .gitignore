@@ -1,0 +1,12 @@
+node_modules/
+.env
+out/
+renderer/dist/
+dist/
+
+# 本地打包归档与临时日志
+*.7z
+*.zip
+.tmp-*.log
+.zip
+.7z

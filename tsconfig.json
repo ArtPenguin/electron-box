@@ -1,0 +1,29 @@
+{
+  "//": "主进程 / 工具层类型检查配置（Electron 主进程代码，Node 运行时，无 DOM）",
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": ["ES2023"],
+    "types": ["node"],
+    "strict": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": false,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "noEmit": true
+  },
+  "include": [
+    "main.ts",
+    "preload.ts",
+    "agent.ts",
+    "db.ts",
+    "types/**/*.ts",
+    "game/**/*.ts",
+    "tools/**/*.ts"
+  ]
+}

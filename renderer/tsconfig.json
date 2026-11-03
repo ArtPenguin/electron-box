@@ -1,0 +1,19 @@
+{
+  "//": "渲染层（Vue 3 + Pinia + ECharts）类型检查配置，由 vue-tsc 执行（能理解 .vue 单文件组件）",
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "types": ["vite/client"],
+    "strict": true,
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "noEmit": true
+  },
+  "include": ["env.d.ts", "../types/**/*.ts", "src/**/*.ts", "src/**/*.d.ts", "src/**/*.vue"]
+}
